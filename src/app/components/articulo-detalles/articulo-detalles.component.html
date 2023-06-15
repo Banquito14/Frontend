@@ -1,0 +1,8 @@
+<h2>Detalles del Artículo</h2>
+
+<div *ngIf="articulo">
+  <h3>{{ articulo.title }}</h3>
+  <p>{{ articulo.content }}</p>
+  <p>{{ articulo.autor }}</p>
+  <img [src]="articulo.imagen" alt="Imagen del artículo">
+</div>

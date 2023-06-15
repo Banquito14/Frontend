@@ -1,0 +1,10 @@
+<h2>Lista de Artículos</h2>
+
+<div *ngIf="articulos">
+  <div *ngFor="let articulo of articulos">
+    <h3>{{ articulo.title }}</h3>
+    <p>{{ articulo.content }}</p>
+    <p>{{ articulo.autor }}</p>
+    <img [src]="articulo.imagen" alt="Imagen del artículo">
+  </div>
+</div>
