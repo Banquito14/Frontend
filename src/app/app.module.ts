@@ -9,14 +9,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { ArticuloListaComponent } from './components/articulo-lista/articulo-lista.component';
 import { ArticuloDetallesComponent } from './components/articulo-detalles/articulo-detalles.component';
 import { ArticuloService } from './services/articulo.service';
-import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { InicioSesionComponent } from './components/inicio-sesion/inicio-sesion.component';
+import { AuthService } from './services/auth.service';
+import { RegistroComponent } from './components/registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticuloListaComponent,
     ArticuloDetallesComponent,
-    InicioSesionComponent
+    InicioSesionComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
     FormsModule
   ],
   providers: [
-    ArticuloService
+    ArticuloService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
